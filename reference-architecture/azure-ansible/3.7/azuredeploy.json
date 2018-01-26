@@ -1003,6 +1003,7 @@
       "apiVersion" : "2015-01-01",
       "dependsOn" : [
         "[concat('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]",
+        "[concat('Microsoft.Network/loadBalancers/', variables('infraLoadBalancerName'))]",
         "[concat('Microsoft.Storage/storageAccounts/', variables('infranodeStorageName'))]"
       ],
       "properties" : {
@@ -1054,6 +1055,7 @@
       "apiVersion" : "2015-01-01",
       "dependsOn" : [
         "[concat('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]",
+        "[concat('Microsoft.Network/loadBalancers/', variables('infraLoadBalancerName'))]",
         "[concat('Microsoft.Storage/storageAccounts/', variables('infranodeStorageName'))]"
       ],
       "properties" : {
@@ -1105,6 +1107,7 @@
       "apiVersion" : "2015-01-01",
       "dependsOn" : [
         "[concat('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]",
+        "[concat('Microsoft.Network/loadBalancers/', variables('infraLoadBalancerName'))]",
         "[concat('Microsoft.Storage/storageAccounts/', variables('infranodeStorageName'))]"
       ],
       "properties" : {
